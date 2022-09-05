@@ -1,0 +1,153 @@
+@import '../../../vars.scss';
+
+.card-container-outer {
+    padding: 0 30px;
+}
+
+.card-container {
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    font-family: 'HKGrotesk';
+    border-bottom: 1px solid rgb(154, 157, 255, 0.3);
+}
+
+//styling for user
+.user-below50 {
+    background-color: #EDEEFD;
+}
+.userabove50 {
+    background-color: #EDEEFD;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+// styling for rank-text
+.rank-text {
+    font-weight: $black;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    color: #7E69CB;
+    min-width: 26px;
+    margin-right: 13px;
+}
+.rank-text-1 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: #FFBF2F;
+}
+.rank-text-2 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: #A2A2A2;
+}
+.rank-text-3 {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: #BC7334;
+}
+
+// styling for name text
+.name-text {
+    font-weight: $semiBold;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    color: #4347A2;
+}
+.name-text-top-three {
+    font-weight: $extraBold;
+}
+
+.entries-text {
+    font-weight: $semiBold;
+    font-size: 10px;
+    letter-spacing: 0;
+    opacity: 60%;
+    color: #2E317D;
+    text-align: right;
+    margin-left: auto;
+}
+
+// styling for MPs cards
+.mp-name-div{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mp-name-text{
+    font-weight: $semiBold;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: #4347A2;
+}
+.mp-name-text-top-three{
+    font-weight: $bold;
+}
+.mp-details-text{
+    font-weight: $medium;
+    font-size: 8px;
+    letter-spacing: 0;
+    color: #797979;
+}
+.mp-entries-div{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+}
+.mp-joinedby-text{
+    font-weight: $medium;
+    font-size: 7px;
+    letter-spacing: 0;
+    color: #797979;
+    text-align: right;
+}
+.mp-entries-text{
+    font-weight: $semiBold;
+    font-size: 10px;
+    letter-spacing: 0;
+    color: #2E317D;
+    text-align: right;
+}
+.mp-name-text-div{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mp-you-text{
+    font-weight: $semiBold;
+    font-size: 10px;
+    color: #2E317D;
+    opacity: 60%;
+    margin-left: 4px;
+}
+
+// styling for Constituency Cards
+.constituency-name-div{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.constituency-you-text{
+    font-weight: $semiBold;
+    font-size: 10px;
+    color: #2E317D;
+    opacity: 60%;
+}
+
+// styling for People Cards
+.people-name-div{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+.people-you-text{
+    font-weight: $semiBold;
+    font-size: 10px;
+    color: #2E317D;
+    opacity: 60%;
+    margin-left: 4px;
+}

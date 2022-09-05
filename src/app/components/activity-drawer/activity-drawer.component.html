@@ -1,0 +1,25 @@
+<div class="activity-outer-container"
+    [ngClass]="{
+        'activity-outer-container-inactive': !showActivityDrawer
+    }">
+    <div class="mask" (click)="toggleShowActivityDrawer()">
+    </div>
+    <div class="activity-container">
+        <div class="title-div">
+            <span>Select Activity</span>
+        </div>
+        <ng-container *ngFor="let item of activities">
+            <div class="name-div-outer">
+                <div class="name-div">
+                    <span class="name-text"
+                        [ngClass]="item==currActivity?'name-text-active':''"
+                        (click)="handleClickFilter(item)"
+                    >
+                    {{item}}</span>
+                    <span class="material-icons tick-icon"
+                        *ngIf="item==currActivity"
+                    >check_circle</span>
+                </div>
+            </div>
+        </ng-container>
+</div>

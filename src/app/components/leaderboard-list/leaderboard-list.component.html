@@ -1,0 +1,7 @@
+<div class="wrapper">
+<div class="list-container" >
+    <ng-container *ngFor="let item of itemList">
+        <app-list-item [item]="item" [isUser]="item.rank===userRank"></app-list-item>
+    </ng-container>
+</div>
+</div>

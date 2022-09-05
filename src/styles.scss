@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+// fonts styles
+//reference:
+// 400 - Medium 
+// 500 - SemiBold
+// 600 - Bold
+// 700 - ExtraBold
+// 800 - Black
+
+
+
+// bold
+@font-face {
+    font-family: HKGrotesk;
+    src: local("HKGrotesk"), url(./assets/fonts/HKGrotesk/HKGrotesk-Bold.otf) format("opentype");
+    font-weight: 600;
+  }
+
+// ExtraBold
+@font-face {
+    font-family: HKGrotesk;
+    src: local("HKGrotesk"), url(./assets/fonts/HKGrotesk/HKGrotesk-ExtraBold.otf) format("opentype");
+    font-weight: 700;
+  }
+
+// SemiBold
+@font-face {
+    font-family: HKGrotesk;
+    src: local("HKGrotesk"), url(./assets/fonts/HKGrotesk/HKGrotesk-SemiBold.otf) format("opentype");
+    font-weight: 500;
+  }
+
+// Medium
+@font-face {
+    font-family: HKGrotesk;
+    src: local("HKGrotesk"), url(./assets/fonts/HKGrotesk/HKGrotesk-Medium.otf) format("opentype");
+    font-weight: 400;
+  }
+
+// Black
+@font-face {
+    font-family: HKGrotesk;
+    src: local("HKGrotesk"), url(./assets/fonts/HKGrotesk/HKGrotesk-Black.otf) format("opentype");
+    font-weight: 800;
+    }

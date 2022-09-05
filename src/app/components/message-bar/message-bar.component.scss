@@ -1,0 +1,17 @@
+@import '../../../vars.scss';
+
+.message-bar-container {
+    height: 30px;
+    width: 100%;
+    background-color: #FBE8D1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-text {
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    color: #2E317D;
+    font-family:'HKGrotesk';
+    font-weight: $semiBold;
+}

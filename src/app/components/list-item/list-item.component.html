@@ -1,0 +1,82 @@
+<!-- for type='people' -->
+<div class="card-container-outer" [ngClass]="{
+    'user-below50': isUser && (item.rank<=50)
+}"
+*ngIf="item.type=='people'">
+<div class="card-container">
+    <span class="rank-text" [ngClass]="{
+        'rank-text-1': item.rank==1,
+        'rank-text-2': item.rank==2,
+        'rank-text-3': item.rank==3
+    }">
+        #{{item.rank}}
+    </span>
+    <div class="people-name-div">
+        <span class="name-text" [ngClass]="{
+            'name-text-top-three': [1,2,3].includes(item.rank)
+        }">
+            {{item.name}}
+        </span>
+        <span class="people-you-text" *ngIf="this.isUser">(You)</span>
+    </div>
+    <span class="entries-text">{{item.score | number:'1.0-0'}} entries</span>
+</div>
+</div>
+
+<!-- for type='constituency' -->
+<div class="card-container-outer" [ngClass]="{
+    'user-below50': isUser && (item.rank<=50)
+}"
+*ngIf="item.type=='constituency'">
+<div class="card-container">
+    <span class="rank-text" [ngClass]="{
+        'rank-text-1': item.rank==1,
+        'rank-text-2': item.rank==2,
+        'rank-text-3': item.rank==3
+    }">
+        #{{item.rank}}
+    </span>
+    <div class="constituency-name-div">
+        <span class="name-text" [ngClass]="{
+            'name-text-top-three': [1,2,3].includes(item.rank)
+        }">
+            {{item.name}}
+        </span>
+        <span class="constituency-you-text" *ngIf="this.isUser">(Your constituency)</span>
+    </div>
+    <span class="entries-text">{{item.score | number:'1.0-0'}} participants</span>
+</div>
+</div>
+
+<!-- for type='MP' -->
+<div class="card-container-outer" [ngClass]="{
+    'user-below50': isUser && (item.rank<=50)
+}"
+*ngIf="item.type=='mp'">
+<div class="card-container">
+    <span class="rank-text" [ngClass]="{
+        'rank-text-1': item.rank==1,
+        'rank-text-2': item.rank==2,
+        'rank-text-3': item.rank==3
+    }">
+        #{{item.rank}}
+    </span>
+    <div class="mp-name-div">
+        <div class="mp-name-text-div">
+            <span class="mp-name-text" [ngClass]="{
+                'mp-name-text-top-three': [1,2,3].includes(item.rank)
+            }">
+                {{item.name}}
+            </span>
+            <span class="mp-you-text" *ngIf="this.isUser">(You)</span>
+        </div>
+    <span class="mp-details-text">
+        {{item.details}}
+    </span>
+    </div>
+    <div class="mp-entries-div">
+    <span class="mp-joinedby-text">Joined by</span>
+    <span class="mp-entries-text">{{item.score | number:'1.0-0'}} People</span>
+    </div>
+</div>
+</div>

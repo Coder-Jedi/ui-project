@@ -1,0 +1,31 @@
+@import '../../../vars.scss';
+
+.activity-filter-bar-container {
+    display: inline-flex;
+    font-size: 14px;
+    font-family: 'HKGrotesk';
+    font-weight: $semiBold;
+    color: #FFFFFF;
+    letter-spacing: 0.28px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid #5940C3;
+}
+.filter-name {
+    margin-right: 15px;
+}
+.filter-container {
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px 8px 17px;
+    border: solid 1px #B9BDFA;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.filter-icon {
+    font-size: 18px;
+    color: #B9BBFF;
+}

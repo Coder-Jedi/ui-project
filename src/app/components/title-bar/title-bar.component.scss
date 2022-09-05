@@ -1,0 +1,21 @@
+@import '../../../vars.scss';
+
+.title-bar-container {
+    height: 55px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    color: #EAEAEA;
+    letter-spacing: 0.28px;
+    border-bottom: 1px solid #5940C3;
+}
+.title-bar-arrow {
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.title-bar-text {
+    font-size: 14px;
+    font-family: 'HKGrotesk';
+    font-weight: $medium;
+}
